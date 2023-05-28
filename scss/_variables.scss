@@ -1,0 +1,60 @@
+// Colores
+$color-principal: #d5bdaf;
+$color-secundario:#76695d; 
+$color-texto: #f5ebe0;
+
+// Tamaños Textos
+$fuente-s: 0.8em;
+$fuente-m: 1em;
+$fuente-l: 1.4 em;
+
+//Tipo Fuente
+$fuente-principal: 'Poppins', sans-serif;
+$fuente-secundaria: 'Roboto', sans-serif;
+
+// Espaciado
+$espaciado-xs: 2.5px;
+$espaciado-s: 5px;
+$espaciado-m: 10px;
+$espaciado-l: 20px;
+$espaciado-xl: 40px;
+
+//Tamaños Pantallas
+$celular: 424px;
+$tablet: 768px;
+$laptop: 1024px;
+$pc: 1440px;
+
+@mixin vista-flexible ($dis, $dir, $jus ,$ali) {
+    display: $dis;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $ali;
+}
+
+@mixin vista-grid ($dis, $col) {
+    display: $dis;
+    grid-template-columns: repeat($col, 1fr);
+    gap: $espaciado-l;
+}
+
+@mixin boton ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+    background-color: $color-principal;
+    color: $color-texto;
+    border: none;
+    border-radius: 5px;
+    padding: $espaciado-s;
+    font-weight: 400;
+
+    &:hover {
+    background-color: $color-secundario;    
+    }
+}
+
+@mixin media ($pantalla) {
+    @media screen and (max-width:$pantalla) {
+        @content;        
+    }
+}
