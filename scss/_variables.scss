@@ -1,31 +1,33 @@
-// Colores
+/* Colores */
 $color-principal: #d5bdaf;
 $color-secundario:#76695d; 
 $color-texto: #f5ebe0;
 
-// Tamaños Textos
-$fuente-s: 0.8em;
-$fuente-m: 1em;
-$fuente-l: 1.4 em;
+/* Tamaños Textos */
+$fuente-s: small;
+$fuente-m: medium;
+$fuente-l: large;
 
-//Tipo Fuente
+/* Tipo Fuente */
 $fuente-principal: 'Poppins', sans-serif;
 $fuente-secundaria: 'Roboto', sans-serif;
 
-// Espaciado
+/* Espaciado */
 $espaciado-xs: 2.5px;
 $espaciado-s: 5px;
 $espaciado-m: 10px;
 $espaciado-l: 20px;
 $espaciado-xl: 40px;
 
-//Tamaños Pantallas
+/* Tamaños Pantallas */
 $celular: 424px;
 $tablet: 768px;
 $laptop: 1024px;
 $pc: 1440px;
 
-@mixin vista-flexible ($dis, $dir, $jus ,$ali) {
+/* Mixins */
+
+@mixin vista-flex ($dis, $dir, $jus ,$ali) {
     display: $dis;
     flex-direction: $dir;
     justify-content: $jus;
@@ -54,7 +56,29 @@ $pc: 1440px;
 }
 
 @mixin media ($pantalla) {
-    @media screen and (max-width:$pantalla) {
+    @media screen and (min-width:$pantalla) {
         @content;        
     }
+}
+
+@mixin titulo-section () {
+    font-size: $fuente-l;
+    font-weight: 600;
+    padding: $espaciado-m;
+    margin: $espaciado-l 0;
+    color: $color-secundario;
+}
+
+@mixin subtitulo-section () {
+    font-size: $fuente-m;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+}
+
+@mixin enlace () {
+    cursor: pointer;
+    text-decoration: none;
 }

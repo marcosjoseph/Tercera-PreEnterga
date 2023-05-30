@@ -1,5 +1,5 @@
 #main__index h2
-{
+{   @include titulo-section;
     text-align: center;
 }
 
@@ -7,12 +7,12 @@
 
 
 #categorias
-{   @include vista-flex (flex, column, start, center)
+{   @include vista-flex (flex, column, start, center);
     gap: 20px;
     width: 100%;
 
     .categoria {
-    @include vista-flex (flex, column, center, center)
+    @include vista-flex (flex, column, center, center);
     }
 
     @include media ($tablet)
