@@ -1,0 +1,153 @@
+#main__index h2
+{
+    text-align: center;
+}
+
+/* Categorias */
+
+
+#categorias
+{   @include vista-flex (flex, column, start, center)
+    gap: 20px;
+    width: 100%;
+
+    .categoria {
+    @include vista-flex (flex, column, center, center)
+    }
+
+    @include media ($tablet)
+    {
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+}
+
+.card-title
+{
+    margin-top: 10px;
+
+    a {
+    background-color: $color-principal; 
+    border: none;  
+
+    &:hover {
+    background-color:$color-secundario; 
+    }
+    }
+}
+
+/* Mas Vendidos Pantallas Chicas */
+
+#masVendidos
+{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);    
+}
+
+.carousel-indicators
+{
+    display: none;
+}
+
+.carousel-caption
+{
+    position: static; 
+    bottom: 0;
+}
+
+.carousel-item img
+{
+    display: block;
+    margin: auto;
+    height: 300px;
+    position: relative;
+}
+
+.carousel-title a
+{
+    background-color: $color-principal;
+    color: $color-texto;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 400;
+
+    &:hover {
+        background-color:$color-secundario;
+        color:$color-texto;
+    }
+}
+
+/* Mas Vendidos Pantallas Grandes */
+
+#masVendidosXL
+{
+    display: none;
+    gap: 20px;
+}
+
+.card
+{   margin: 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    box-shadow: 0px 0px 5px 0px rgba(118,105,93,1); 
+    
+    img {
+    height: 300px;
+    width: 100%;    
+    }
+}
+
+.card-body
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+
+    h5 {
+    text-align: center;
+    color:$color-secundario;
+    border-radius: 5px;
+    padding: 5px;
+    /* margin-bottom: 15px; */
+    font-weight: 400;
+    font-size: medium;
+    }
+
+    ul {
+    height: 70px;
+    padding: 0px;
+    font-size: small;
+    }
+
+    a {
+    background-color: $color-principal;
+    color:$color-texto;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2.5px 0;
+    font-weight: 400;
+    
+    &:hover { 
+    background-color:$color-secundario;
+    color: $color-texto;
+    }
+    }
+} 
+
+@media (min-width: $laptop) 
+{   
+    #masVendidos
+    {
+        display: none;
+    }
+    #masVendidosXL
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+}

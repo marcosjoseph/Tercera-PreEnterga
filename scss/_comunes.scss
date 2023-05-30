@@ -1,0 +1,102 @@
+*{margin: 0px;padding: 0px;}
+
+body
+{
+    font-family: $fuente-principal;
+}
+
+#vistaGrid {
+    @include vista-flex (flex, column, center, center);
+}
+
+ol ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+a{
+    @include enlace;
+}
+
+/* Header */
+
+header {
+    @include vista-flex (flex, column, center, center);
+    position: sticky;
+    top: 0px;
+    opacity: .9;
+    background-color: $color-texto;
+    width: 100%;
+    z-index:99; 
+
+    h1 {
+        font-size: $fuente-m;
+        background-color: $color-principal;
+        color: $color-texto;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logoGroot {
+        width: 100px;
+        align-items: center;
+        padding-top: $espaciado-m;
+    }
+
+    .navbar-toggler {
+    border: none;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    a:hover {
+        background-color:$color-secundario;
+        color:$color-texto;
+    }
+
+    .nav-link .active {
+        color: $color-secundario;
+
+        &:hover {
+            color: $color-texto;
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    @include vista-flex (flex, row, center, center);
+    position: sticky;
+    bottom: 0px;
+    background-color: $color-principal;
+    width: 100%;
+    height: 60px;
+    margin-top: $espaciado-xl;
+
+    img {
+        width: 30px;
+        align-content: center;
+    }
+
+    .redes-sociales {
+        list-style: none;
+        @include vista-flex (flex, row, center, center);
+        gap: $espaciado-l;
+    }
+}
+
+
+
