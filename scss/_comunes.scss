@@ -47,44 +47,45 @@ header {
         text-align: center;
     }
 
-    #logoGroot {
+     #logoGroot {
         width: 100px;
         align-items: center;
         padding-top: $espaciado-m;
     }
-
+    }
+    
     .navbar-toggler {
     border: none;
-    }
 
     &:focus {
         box-shadow: none;
     }
-
-    a:hover {
-        background-color:$color-secundario;
-        color:$color-texto;
     }
 
-    .nav-link .active {
+    .nav-link
+    {
         color: $color-secundario;
 
-        &:hover {
-            color: $color-texto;
+        &:active{
+            color:$color-secundario;
+        }
+
+        &:hover{
+            background-color:$color-secundario;
+            color:$color-texto;
         }
     }
-}
 
 /* Footer */
 
 footer {
-    @include vista-flex (flex, row, center, center);
+    @include vista-flex (flex, row, end, end);
     position: sticky;
-    bottom: 0px;
-    background-color: $color-principal;
+    bottom: $espaciado-xl;
+    left: $espaciado-m;
+    background-color: none;
     width: 100%;
-    height: 60px;
-    margin-top: $espaciado-xl;
+   
 
     img {
         width: 30px;
@@ -93,8 +94,9 @@ footer {
 
     .redes-sociales {
         list-style: none;
-        @include vista-flex (flex, row, center, center);
-        gap: $espaciado-l;
+        @include vista-flex (flex, column, center, center);
+        gap: $espaciado-m;
+        margin-right: $espaciado-m;
     }
 }
 

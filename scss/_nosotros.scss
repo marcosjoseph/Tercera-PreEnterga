@@ -1,0 +1,38 @@
+/* Nosotros */
+
+#main__nosotros
+{
+    margin: 0 $espaciado-l;
+    @include vista-flex (flex, column, center, center);
+
+    ol{
+        margin: 0 $espaciado-l;
+    }
+
+    a{
+        color: $color-secundario;
+        font-weight: 600;
+
+        &:hover {
+            background-color:$color-texto;
+        }
+    }
+
+    h2 {
+    @include titulo-section;
+    }
+
+    img{
+        width: 350px;
+    }
+
+}
+
+
+@media (min-width: 1024px) 
+{
+    #main__nosotros h2
+    {
+        text-align: start;
+    }
+}
