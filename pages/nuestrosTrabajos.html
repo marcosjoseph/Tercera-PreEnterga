@@ -30,7 +30,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     <a class="nav-link" href="nosotros.html">Nosotros</a>
                     <a class="nav-link" href="nuestrosTrabajos.html">Nuestros Trabajos</a>
                     <a class="nav-link" href="enStock.html">En Stock</a>
@@ -52,12 +52,22 @@
                 <input type="radio" name="seleccionado" id="cat4">
                 <input type="radio" name="seleccionado" id="todos" checked>
 
-                <div class="labelsFiltro z-3">
-                <label for="cat1">Mesas</label>
-                <label for="cat2">Escritorios</label>
-                <label for="cat3">Deco</label>
-                <label for="cat4">Exterior</label>
-                <label for="todos">Todo</label>
+                
+
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Categoría</button>
+
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <div class="labelsFiltro z-3">
+                            <label for="cat1">Mesas</label>
+                            <label for="cat2">Escritorios</label>
+                            <label for="cat3">Deco</label>
+                            <label for="cat4">Exterior</label>
+                            <label for="todos">Todo</label>
+                            </div>
+                    </div>
                 </div>
 
                 <div class="padreCards">

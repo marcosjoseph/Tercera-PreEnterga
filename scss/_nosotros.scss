@@ -2,7 +2,7 @@
 
 #main__nosotros
 {
-    margin: 0 $espaciado-l;
+    margin: $espaciado-l;
     @include vista-flex (flex, column, center, center);
 
     ol{
@@ -23,16 +23,25 @@
     }
 
     img{
-        width: 350px;
+        width: 300px;
     }
 
-}
-
-
-@media (min-width: 1024px) 
-{
-    #main__nosotros h2
-    {
-        text-align: start;
-    }
+    @include media ($tablet) 
+        {
+        display: grid;
+        grid-template-areas:
+        "nosotros foto"
+        "que foto"
+        "como como";
+        grid-template-columns: (50% auto);
+        grid-template-rows: (0.3fr 0.3fr 2fr);
+        gap: $espaciado-m;
+        justify-items: center;
+        align-items: start;
+        
+        #nosotros__nosotros {grid-area: nosotros;}
+        #nosotros__foto {grid-area: foto;}
+        #nosotros__que {grid-area: que;}
+        #nosotros__como {grid-area: como;}
+        }
 }

@@ -34,12 +34,6 @@ $pc: 1440px;
     align-items: $ali;
 }
 
-@mixin vista-grid ($dis, $col) {
-    display: $dis;
-    grid-template-columns: repeat($col, 1fr);
-    gap: $espaciado-l;
-}
-
 @mixin boton ($alto, $ancho) {
     height: $alto;
     width: $ancho;
