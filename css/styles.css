@@ -311,8 +311,17 @@ footer .redes-sociales {
   color: #f5ebe0;
 }
 
-.offcanvas .offcanvas-top {
-  top: 150px;
+.offcanvas-body {
+  background-color: #f5ebe0;
+}
+
+#offcanvasTop {
+  height: 40%;
+}
+@media (min-width: 424px) {
+  #offcanvasTop {
+    height: 140px;
+  }
 }
 
 #filtroCards {
@@ -330,8 +339,6 @@ footer .redes-sociales {
 }
 
 .labelsFiltro {
-  position: sticky;
-  top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -339,7 +346,7 @@ footer .redes-sociales {
   gap: 10px;
   margin: 10px auto;
   z-index: -99;
-  width: 400px;
+  width: 300px;
 }
 .labelsFiltro label {
   background-color: #d5bdaf;
@@ -356,9 +363,10 @@ footer .redes-sociales {
 }
 @media (max-width: 424px) {
   .labelsFiltro {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    width: 50%;
   }
 }
 

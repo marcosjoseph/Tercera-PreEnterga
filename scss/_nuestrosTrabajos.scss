@@ -12,8 +12,16 @@
     }
 }
 
-.offcanvas .offcanvas-top {
-    top: 150px;
+.offcanvas-body {
+    background-color: $color-texto;
+}
+
+#offcanvasTop{
+    height:40%;
+
+    @media (min-width:$celular) {
+        height:140px;
+        }
 }
 
 #filtroCards {
@@ -27,13 +35,11 @@
 
 .labelsFiltro
 {
-    position: sticky;
-    top: 150px;
     @include vista-flex (flex, row, center, center);
     gap: $espaciado-m;
     margin: $espaciado-m auto;
     z-index: -99;
-    width: 400px;
+    width: 300px;
 
     label {
     background-color: $color-principal;
@@ -50,9 +56,10 @@
     }
 
     @media (max-width:$celular) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         text-align: center;
+        width:50%;
     }
 }
 
