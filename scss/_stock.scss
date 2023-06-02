@@ -2,20 +2,21 @@
 
 #enStock
 {
-    margin: 0px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0px $espaciado-l;
+    @include vista-flex (flex, column, center, center);
+
+    h2 {
+        @include titulo-section;
+    }
 }
 
 .stock
 {
-    margin: 20px 0px;
+    margin: $espaciado-l 0px;
 }
 
 
-@media (min-width: 768px) 
+@media (min-width: $tablet) 
 {
     .padreCardsStock
     {
@@ -23,16 +24,16 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: $espaciado-l;
     }
 }
 
-@media (min-width: 1024px) 
+@media (min-width: $laptop) 
 {
     .intro
     {
-        color: #76695d;
-        margin-left: 15px;
+        color: $color-secundario;
+        margin-left: $espaciado-l;
     }
 
     #enStock h2

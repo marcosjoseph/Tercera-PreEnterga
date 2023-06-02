@@ -34,9 +34,7 @@ $pc: 1440px;
     align-items: $ali;
 }
 
-@mixin boton ($alto, $ancho) {
-    height: $alto;
-    width: $ancho;
+@mixin boton () {
     background-color: $color-principal;
     color: $color-texto;
     border: none;
@@ -59,20 +57,20 @@ $pc: 1440px;
     font-size: $fuente-l;
     font-weight: 600;
     padding: $espaciado-m;
-    margin: $espaciado-l 0;
+    margin: $espaciado-m 0;
     color: $color-secundario;
 }
 
 @mixin subtitulo-section () {
     font-size: $fuente-m;
     font-weight: 600;
-    text-decoration: none;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
-    box-shadow: 0px 0px 5px 0px rgba(118,105,93,1);
+    text-decoration: underline;
+    padding: $espaciado-m;
+    margin: $espaciado-m 0;
+    color: $color-secundario;
 }
 
-@mixin enlace () {
+@mixin enlace {
     cursor: pointer;
     text-decoration: none;
 }

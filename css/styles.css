@@ -89,8 +89,8 @@ footer {
   justify-content: end;
   align-items: end;
   position: sticky;
-  bottom: 40px;
-  left: 10px;
+  bottom: 0px;
+  margin-top: 20px;
   background-color: none;
   width: 100%;
 }
@@ -112,7 +112,7 @@ footer .redes-sociales {
   font-size: large;
   font-weight: 600;
   padding: 10px;
-  margin: 20px 0;
+  margin: 10px 0;
   color: #76695d;
   text-align: center;
 }
@@ -269,7 +269,7 @@ footer .redes-sociales {
   font-size: large;
   font-weight: 600;
   padding: 10px;
-  margin: 20px 0;
+  margin: 10px 0;
   color: #76695d;
 }
 #main__nosotros img {
@@ -316,7 +316,7 @@ footer .redes-sociales {
 }
 
 #offcanvasTop {
-  height: 40%;
+  height: 50%;
 }
 @media (min-width: 424px) {
   #offcanvasTop {
@@ -370,6 +370,22 @@ footer .redes-sociales {
   }
 }
 
+#boton__subir {
+  background-color: #d5bdaf;
+  color: #f5ebe0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 400;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  margin: 20px 0;
+}
+#boton__subir:hover {
+  background-color: #76695d;
+}
+
 .card-img-top img {
   height: 300px;
 }
@@ -397,19 +413,20 @@ footer .redes-sociales {
     gap: 20px;
   }
 }
-@media (min-width: 1024px) {
-  .intro {
-    color: #76695d;
-    margin-left: 20px;
-  }
-}
 /* En Stock */
 #enStock {
-  margin: 0px 30px;
+  margin: 0px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#enStock h2 {
+  font-size: large;
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px 0;
+  color: #76695d;
 }
 
 .stock {
@@ -428,10 +445,153 @@ footer .redes-sociales {
 @media (min-width: 1024px) {
   .intro {
     color: #76695d;
-    margin-left: 15px;
+    margin-left: 20px;
   }
   #enStock h2 {
     text-align: start;
+  }
+}
+/* Presupuestá */
+#presupuesta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 40px;
+  padding: 20px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1440px) {
+  #presupuesta {
+    justify-content: start;
+    align-items: start;
+  }
+}
+#presupuesta h2 {
+  font-size: large;
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px 0;
+  color: #76695d;
+}
+#presupuesta h3 {
+  font-size: medium;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 10px;
+  margin: 10px 0;
+  color: #76695d;
+}
+#presupuesta p {
+  margin-bottom: 10px;
+}
+
+/* Datos de Contacto */
+#datosDeContacto, #detalleConsulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  #datosDeContacto, #detalleConsulta {
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+/* Detalle Consulta */
+.input-group-text {
+  width: 111px;
+}
+
+.col-md-4 {
+  width: 90%;
+}
+
+#presupuesta__categoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+@media screen and (min-width: 768px) {
+  #presupuesta__categoria {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+#presupuesta__medidas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  #presupuesta__medidas {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #presupuesta__medidas {
+    justify-content: start;
+  }
+}
+#presupuesta__medidas .form-control {
+  width: 55px;
+}
+
+#largo, #ancho, #alto {
+  display: flex;
+  flex-direction: row;
+}
+
+#validationTextarea {
+  height: 300px;
+  width: 100%;
+}
+
+#adjuntarArchivo {
+  width: 100%;
+}
+
+#enviarConsulta button {
+  background-color: #d5bdaf;
+  color: #f5ebe0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 400;
+}
+#enviarConsulta button:hover {
+  background-color: #76695d;
+}
+#enviarConsulta:hover {
+  background-color: #76695d;
+}
+
+@media (min-width: 768px) {
+  #presupuesta h2 {
+    text-align: start;
+  }
+  .col-md-4 {
+    width: 500px;
+  }
+  #presupuesta__medidas {
+    flex-direction: row;
+    width: 500px;
+  }
+  #presupuesta__medidas .form-control {
+    width: 55px;
+  }
+  #validationTextarea {
+    width: 500px;
+  }
+  #adjuntarArchivo {
+    width: 500px;
   }
 }
 

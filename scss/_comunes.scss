@@ -47,7 +47,7 @@ header {
         text-align: center;
     }
 
-     #logoGroot {
+    #logoGroot {
         width: 100px;
         align-items: center;
         padding-top: $espaciado-m;
@@ -81,11 +81,10 @@ header {
 footer {
     @include vista-flex (flex, row, end, end);
     position: sticky;
-    bottom: $espaciado-xl;
-    left: $espaciado-m;
+    bottom:0px;
+    margin-top: $espaciado-l;
     background-color: none;
     width: 100%;
-   
 
     img {
         width: 30px;

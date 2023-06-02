@@ -1,0 +1,121 @@
+/* Presupuestá */
+
+#presupuesta {
+    @include vista-flex (flex, column, center, center);
+    width: 100%;
+    margin: (0 $espaciado-xl);
+    padding: $espaciado-l;
+    overflow: hidden;
+
+    @include media ($pc) {
+        justify-content: start;
+        align-items: start;
+    }
+
+    h2 {@include titulo-section;}
+
+    h3 {@include subtitulo-section;}
+
+    p {margin-bottom:$espaciado-m;}
+}
+
+/* Datos de Contacto */
+
+#datosDeContacto, #detalleConsulta {
+    @include vista-flex (flex, column, center, center);
+    @include media ($pc) { 
+        justify-content: start;
+        align-items: start;
+    }
+}
+
+/* Detalle Consulta */
+
+.input-group-text
+{
+    width: 111px;
+}
+
+.col-md-4
+{
+    width: 90%;
+}
+
+#presupuesta__categoria {
+    @include vista-flex (flex, column, start, start);
+
+    @include media ($tablet) {
+        flex-direction:row;
+        justify-content:center;
+    }
+}
+
+#presupuesta__medidas
+{   
+    @include vista-flex (flex, column, center, center);
+
+    @include media ($tablet) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @include media ($pc) {
+        justify-content: start;
+    }
+
+    .form-control {width:55px;}
+}
+
+#largo, #ancho, #alto
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#validationTextarea
+{
+    height: 300px;
+    width: 100%;
+}
+
+#adjuntarArchivo
+{
+    width: 100%;
+}
+
+#enviarConsulta {
+    button {@include boton;}
+
+    &:hover {background-color: $color-secundario;}
+}
+
+@media (min-width: $tablet) 
+{
+    #presupuesta h2
+    {
+        text-align: start;
+    }
+
+    .col-md-4
+    {
+        width: 500px;
+    }
+
+    #presupuesta__medidas
+    {
+        flex-direction: row;
+        width: 500px;
+
+        .form-control {width: 55px;}
+    }
+
+    #validationTextarea
+    {
+        width: 500px;
+    }
+
+    #adjuntarArchivo
+    {
+        width: 500px;
+    }
+}

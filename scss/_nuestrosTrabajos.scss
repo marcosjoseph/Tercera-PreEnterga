@@ -17,7 +17,7 @@
 }
 
 #offcanvasTop{
-    height:40%;
+    height:50%;
 
     @media (min-width:$celular) {
         height:140px;
@@ -63,6 +63,14 @@
     }
 }
 
+#boton__subir {
+    @include boton;
+    padding:$espaciado-s;
+    width: 100px;
+    text-align: center;
+    margin: ($espaciado-l 0);
+}
+
 .card-img-top img
 {
     height: 300px;
@@ -94,15 +102,6 @@
         justify-content: center;
         align-items: center;
         gap: $espaciado-l;
-    }
-}
-
-@media (min-width: $laptop) 
-{
-    .intro
-    {
-        color:$color-secundario;
-        margin-left: $espaciado-l;
     }
 }
 
