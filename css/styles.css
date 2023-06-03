@@ -63,12 +63,18 @@ header #logoGroot {
   align-items: center;
   padding-top: 10px;
 }
+header #logoGroot:hover {
+  transform: scale(1.25);
+}
 
 .navbar-toggler {
   border: none;
 }
 .navbar-toggler:focus {
   box-shadow: none;
+}
+.navbar-toggler:hover {
+  transform: scale(1.25);
 }
 
 .nav-link {
@@ -106,6 +112,9 @@ footer .redes-sociales {
   align-items: center;
   gap: 10px;
   margin-right: 10px;
+}
+footer #whatsapp:hover, footer #instagram:hover {
+  transform: scale(1.4);
 }
 
 #main__index h2 {
@@ -247,6 +256,14 @@ footer .redes-sociales {
     align-items: center;
   }
 }
+.carousel-control-next-icon {
+  background-image: url(../img/flecha-derecha.png);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/flecha-izquierda.png);
+}
+
 /* Nosotros */
 #main__nosotros {
   margin: 20px;

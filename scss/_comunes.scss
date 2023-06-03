@@ -51,6 +51,8 @@ header {
         width: 100px;
         align-items: center;
         padding-top: $espaciado-m;
+
+        &:hover {transform:scale(1.25);}
     }
     }
     
@@ -60,7 +62,10 @@ header {
     &:focus {
         box-shadow: none;
     }
+
+    &:hover {transform:scale(1.25);}
     }
+    
 
     .nav-link
     {
@@ -88,7 +93,7 @@ footer {
 
     img {
         width: 30px;
-        align-content: center;
+        align-content: center;        
     }
 
     .redes-sociales {
@@ -96,6 +101,10 @@ footer {
         @include vista-flex (flex, column, center, center);
         gap: $espaciado-m;
         margin-right: $espaciado-m;
+    }
+
+    #whatsapp:hover, #instagram:hover {
+        transform:scale(1.4);
     }
 }
 

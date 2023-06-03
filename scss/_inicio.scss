@@ -10,7 +10,7 @@
 {   @include vista-flex (flex, column, start, center);
     gap: 20px;
     width: 100%;
-
+    
     .categoria {
     @include vista-flex (flex, column, center, center);
     }
@@ -150,4 +150,12 @@
         justify-content: start;
         align-items: center;
     }
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/flecha-derecha.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/flecha-izquierda.png);
 }
