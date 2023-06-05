@@ -393,7 +393,7 @@ footer #whatsapp:hover, footer #instagram:hover {
   }
 }
 
-#boton__subir {
+#subir {
   background-color: #d5bdaf;
   color: #f5ebe0;
   border: none;
@@ -405,7 +405,7 @@ footer #whatsapp:hover, footer #instagram:hover {
   text-align: center;
   margin: 20px 0;
 }
-#boton__subir:hover {
+#subir:hover {
   background-color: #76695d;
 }
 
