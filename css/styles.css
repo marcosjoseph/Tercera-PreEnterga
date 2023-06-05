@@ -291,6 +291,7 @@ footer #whatsapp:hover, footer #instagram:hover {
 }
 #main__nosotros img {
   width: 300px;
+  padding: 20px;
 }
 @media screen and (min-width: 768px) {
   #main__nosotros {
@@ -313,6 +314,11 @@ footer #whatsapp:hover, footer #instagram:hover {
   }
   #main__nosotros #nosotros__como {
     grid-area: como;
+  }
+}
+@media screen and (min-width: 1550px) {
+  #main__nosotros {
+    grid-template-areas: "nosotros foto" "que foto" "como foto";
   }
 }
 

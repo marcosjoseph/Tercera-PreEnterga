@@ -24,6 +24,7 @@
 
     img{
         width: 300px;
+        padding: $espaciado-l;
     }
 
     @include media ($tablet) 
@@ -43,5 +44,12 @@
         #nosotros__foto {grid-area: foto;}
         #nosotros__que {grid-area: que;}
         #nosotros__como {grid-area: como;}
+        }
+
+        @include media (1550px) {
+            grid-template-areas:
+        "nosotros foto"
+        "que foto"
+        "como foto";
         }
 }
