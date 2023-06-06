@@ -103,8 +103,14 @@ footer {
         margin-right: $espaciado-m;
     }
 
-    #whatsapp:hover, #instagram:hover {
+    #whatsapp:hover, #instagram:hover, #subir:hover {
         transform:scale(1.4);
+    }
+
+    #subir {
+        @include media ($pc) {
+            display: none;
+        }
     }
 }
 

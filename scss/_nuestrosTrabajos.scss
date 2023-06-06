@@ -1,5 +1,10 @@
 /* Nuestros Trabajos */
 
+#nuestrosTrabajos {
+    @include vista-flex (flex, column, center, center);
+}
+
+
 .btn {
     margin-top: $espaciado-m;
     background-color: $color-principal;
@@ -63,14 +68,6 @@
     }
 }
 
-#arriba {
-    @include boton;
-    padding:$espaciado-s;
-    width: 100px;
-    text-align: center;
-    margin: ($espaciado-l 0);
-}
-
 .card-img-top img
 {
     height: 300px;
@@ -93,8 +90,7 @@
     display: flex;
 }
 
-@media (min-width: $tablet) 
-{
+@media (min-width: $tablet) {
     .padreCards
     {
         display: flex;

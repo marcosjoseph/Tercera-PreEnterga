@@ -113,8 +113,13 @@ footer .redes-sociales {
   gap: 10px;
   margin-right: 10px;
 }
-footer #whatsapp:hover, footer #instagram:hover {
+footer #whatsapp:hover, footer #instagram:hover, footer #subir:hover {
   transform: scale(1.4);
+}
+@media screen and (min-width: 1440px) {
+  footer #subir {
+    display: none;
+  }
 }
 
 #main__index h2 {
@@ -323,6 +328,13 @@ footer #whatsapp:hover, footer #instagram:hover {
 }
 
 /* Nuestros Trabajos */
+#nuestrosTrabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn {
   margin-top: 10px;
   background-color: #d5bdaf;
@@ -391,22 +403,6 @@ footer #whatsapp:hover, footer #instagram:hover {
     text-align: center;
     width: 50%;
   }
-}
-
-#arriba {
-  background-color: #d5bdaf;
-  color: #f5ebe0;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  font-weight: 400;
-  padding: 5px;
-  width: 100px;
-  text-align: center;
-  margin: 20px 0;
-}
-#arriba:hover {
-  background-color: #76695d;
 }
 
 .card-img-top img {
